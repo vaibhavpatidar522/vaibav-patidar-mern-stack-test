@@ -1,0 +1,133 @@
+
+.container {
+  
+  display: flex;
+  align-items: center;
+   justify-content:space-between;
+   flex-wrap: wrap;
+   margin-bottom: 30px;
+   margin-top: 30px;
+
+}
+
+.buttonContainer{
+  padding: 20px;
+}
+.serchContainer{
+  padding: 20px;
+  
+}
+
+  
+  .primaryButton {
+     background-color: #9a4848;
+      color: #ffff;
+       margin-left: 10px;
+      padding: 10px ;
+       border : none ;
+        border-radius: 3px
+        
+  }
+  
+
+  .paginationButton{
+    background-color: #9a4848;
+    color: #b91e1e;
+     margin-left: 10px;
+    padding: 10px ;
+     border : none ;
+      border-radius: 3px
+  }
+
+  .tableContainer {
+    box-shadow : rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px ;
+     margin-bottom:10px
+  }
+
+  .paginationContainer {
+     display: flex;
+      align-items: center ;
+       justify-content: end
+       }
+
+
+  @media only screen and (max-width: 600px) {
+    .buttonContainer{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+    }
+    .serchContainer{
+      
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    table.dnxTable {
+      border: none !important;
+    }
+    
+    table.dnxTable th,
+    table.dnxTable td {
+      padding: 1em 0.5em;
+      position: relative;
+    }
+  
+    table.dnxTable tr,
+    table.dnxTable td,
+    table.dnxTable tfoot {
+      display: block !important;
+      width: 100%;
+    }
+  
+    table.denxTable tbody tr {
+      border-top: 1px solid rgba(34, 36, 38, 0.1);
+    }
+  
+    table.denxTable tfoot tr {
+      border: none !important;
+    }
+  
+    table.dnxTable td {
+      border-top: none !important;
+      border-left: none !important;
+    }
+    
+    table.dnxTable tbody tr {
+      padding: 0.25em 0;
+      border: 1px solid rgba(34, 36, 38, 0.2);
+    }
+  
+    table.dnxTable tbody tr:not(:last-child) {
+      margin-bottom: 0.25em;
+    }
+  
+    /** important1: hide theader **/
+    table.dnxTable thead {
+      display: none !important;
+    }
+  
+    table.dnxTable tbody td {
+      padding: 0.3em 0.5em 0.3em 7.5em !important;
+    }
+  
+    .dnxTable td:not(:last-child) {
+      border-bottom: 1px solid rgba(34, 36, 38, 0.1);
+    }
+  
+    /** important2: use data-label attribute as a table header **/
+    table.dnxTable tbody td:before {
+      content: attr(data-label);
+      left: 0.5em;
+      position: absolute;
+      top: 0.15em;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 6em;
+      overflow: hidden;
+    }
+  }

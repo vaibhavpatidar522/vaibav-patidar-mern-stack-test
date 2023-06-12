@@ -1,0 +1,20 @@
+.container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  
+.imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+.error {
+  color: red;
+}
+
+
+
+.customButton {
+    background-color: #9a4848 !important;
+    color: #fff !important;
+  }
+  
